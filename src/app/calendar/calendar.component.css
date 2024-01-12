@@ -1,0 +1,16 @@
+@media screen and (min-width: 37.5em) {
+  
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: lightgray;
+    
+  }}
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+    
+    padding: 20px;
+    text-align: center;
+  }

@@ -1,0 +1,29 @@
+<div>
+  <button
+    mat-raised-button
+    color="primary"
+    type="button"
+    name="previous"
+    (click)="setMonth(true)"
+  >
+    Previous
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    type="button"
+    name="next"
+    (click)="setMonth(false)"
+  >
+    Next
+  </button>
+</div>
+<div class="container-fluid grid-container" *ngIf="dates && data">
+  <div class="row grid-item" *ngFor="let date of dates; index as i">
+       
+          <app-day
+            [inputDate]="date"
+            [orders]="getOrders(date)"
+          ></app-day>
+    </div>
+  </div>
