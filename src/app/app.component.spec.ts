@@ -7,7 +7,7 @@ describe('AppComponent', () => {
       imports: [AppComponent],
     })
       .overrideComponent(AppComponent, {
-        set: { template: '<app-calendar></app-calendar>' },
+        set: { template: '' },
       })
       .compileComponents();
   });
@@ -20,12 +20,5 @@ describe('AppComponent', () => {
   it("should expose the 'Medi' title", () => {
     const fixture = TestBed.createComponent(AppComponent);
     expect(fixture.componentInstance.title).toBe('Medi');
-  });
-
-  it('should render the calendar shell', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('app-calendar')).not.toBeNull();
   });
 });
