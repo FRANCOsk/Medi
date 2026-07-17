@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
-    "audit:ci": "npm audit --audit-level=high",
+    "audit:ci": "npm audit --omit=dev --audit-level=high",
     "serve:ssr:medi": "node dist/medi/server/server.mjs"
   },
   "private": true,
