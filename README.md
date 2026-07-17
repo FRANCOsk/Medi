@@ -1,10 +1,10 @@
 # Medi
 
-Medi is an Angular 17 application with server-side rendering support. The project uses Angular Material and Bootstrap for the user interface and Express for the SSR server.
+Medi is an Angular 21 application with server-side rendering support. It uses Angular Material and Bootstrap for the user interface and Express 5 for the SSR server.
 
 ## Requirements
 
-- Node.js 20.9 or newer within the Node 20 LTS line
+- Node.js 22 LTS
 - npm 10 or newer
 
 ## Local development
@@ -31,8 +31,8 @@ npm run test:ci
 npm run audit:ci
 ```
 
-The GitHub Actions workflow installs dependencies, performs a production build, runs the headless test suite, and fails on high-severity dependency vulnerabilities.
+The GitHub Actions workflow installs dependencies, performs a production build, runs the headless test suite, and fails on high-severity production dependency vulnerabilities.
 
 ## Project status
 
-This repository is under active modernization. Dependency updates should be reviewed together with the generated `package-lock.json`, and all CI checks must pass before changes are merged.
+This repository is under active modernization. Dependency changes must pass the production build, unit tests, and dependency audit before they are merged.
