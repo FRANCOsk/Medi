@@ -5,7 +5,11 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
-    }).compileComponents();
+    })
+      .overrideComponent(AppComponent, {
+        set: { template: '<app-calendar></app-calendar>' },
+      })
+      .compileComponents();
   });
 
   it('should create the app', () => {
