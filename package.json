@@ -1,12 +1,16 @@
 {
   "name": "medi",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Angular SSR application for medical administration workflows.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:production": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "audit:ci": "npm audit --audit-level=high",
     "serve:ssr:medi": "node dist/medi/server/server.mjs"
   },
   "private": true,
@@ -23,7 +27,6 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.8",
-    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.2",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
@@ -44,5 +47,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.2.2"
+  },
+  "engines": {
+    "node": ">=20.9 <21",
+    "npm": ">=10"
   }
 }
