@@ -1,11 +1,11 @@
 # Medi
 
-Medi is an Angular 21 application with server-side rendering support. It uses Angular Material and Bootstrap for the user interface and Express 5 for the SSR server.
+Medi is an Angular 17 LTS application with server-side rendering support. It uses Angular Material and Bootstrap for the user interface and Express 4 for the SSR server.
 
 ## Requirements
 
-- Node.js 22 LTS
-- npm 10 or newer
+- Node.js 20 LTS
+- npm 9 or newer
 
 ## Local development
 
